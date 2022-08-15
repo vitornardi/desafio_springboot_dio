@@ -1,0 +1,45 @@
+package one.digitalinnovation.gof;
+
+import one.digitalinnovation.gof.singleton.SingletonEager;
+import one.digitalinnovation.gof.singleton.SingletonLazy;
+import one.digitalinnovation.gof.singleton.SingletonLazyHolder;
+import one.digitalinnovation.gof.stategy.Comportamento;
+import one.digitalinnovation.gof.stategy.ComportamentoDefensivo;
+import one.digitalinnovation.gof.stategy.ComportamentoNormal;
+import one.digitalinnovation.gof.stategy.Robo;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		//Testes relacionandos ao Design Pattern 
+		//Singleton:
+		SingletonLazy lazy = SingletonLazy.getInstancia();
+		System.out.println(lazy);
+		lazy = SingletonLazy.getInstancia();
+		System.out.println(lazy);
+		
+		SingletonEager eager = SingletonEager.getInstancia();
+		System.out.println(eager);
+		eager = SingletonEager.getInstancia();
+		System.out.println(eager);
+
+		SingletonLazyHolder holder = SingletonLazyHolder.getInstancia();
+		System.out.println(holder);
+		holder = SingletonLazyHolder.getInstancia();
+		System.out.println(holder);
+		
+		//Strategy:
+		Comportamento normal = new ComportamentoNormal();
+		Comportamento defensivo = new ComportamentoDefensivo();
+		Comportamento agresivo = new ComportamentoDefensivo();
+		
+		Robo robo = new Robo();
+		robo.setComportamento(normal);
+		
+		robo.mover();
+		robo.mover();		
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+package one.digitalinnovation.gof.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import one.digitalinnovation.gof.model.Cliente;
+import one.digitalinnovation.gof.service.ClienteService;
+import one.digitalinnovation.gof.service.Interable;
+
+@Service
+public class ClienteServiceImpl implements ClienteService {
+
+	@Override
+	public Interable<Cliente> buscarTodos() {
+		return null;
+	}
+
+	@Override
+	public Cliente buscarPorId(Long id) {
+		return null;
+	}
+
+	@Override
+	public void inserir(Cliente cliente) {
+		
+	}
+
+	@Override
+	public void atualizar(Long id, Cliente cliente) {
+		
+	}
+
+	@Override
+	public void deletar(Long id) {
+		
+	}
+
+	
+}

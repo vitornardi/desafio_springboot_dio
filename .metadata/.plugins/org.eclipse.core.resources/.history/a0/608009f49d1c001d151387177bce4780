@@ -1,0 +1,5 @@
+package one.digitalinnovation.gof.stategy;
+
+public class ComportamentoNormal {
+
+}

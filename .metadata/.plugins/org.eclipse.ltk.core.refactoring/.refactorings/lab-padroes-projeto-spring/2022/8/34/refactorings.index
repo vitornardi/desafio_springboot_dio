@@ -1,0 +1,7 @@
+1660574323714	Copy package
+1660574330425	Copy package
+1660574405136	Rename type 'LabPadroesProjetoSpringApplication'
+1660574413442	Rename type 'LabPadroesProjetoSpringApplicationTests'
+1660577263895	Rename package 'one.digitalinnovation.gof.service.impl'
+1660596374906	Extract local variable 'cep'
+1660596877491	Extract method 'salvarClienteComCep'
